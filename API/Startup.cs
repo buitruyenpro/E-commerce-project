@@ -38,8 +38,7 @@ namespace API
 
         public void ConfigureProductionServices(IServiceCollection services)
         {
-            services.AddDbContext<StoreContext>(x =>
-                x.UseMySql(_config.GetConnectionString("DefaultConnection")));
+            
 
             services.AddDbContext<AppIdentityDbContext>(x =>
             {
